@@ -4,8 +4,170 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Summer Sale</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  
+  <header class="bg-amber-50 w-full">
+    <!-- flex gap-20 items-center justify-center text-black -->
+    <section class="flex flex-col md:flex-row gap-10 items-center justify-center text-black p-4 md:p-8 ">
+      <!-- Cover Container -->
+      <div class="text-center space-y-10">
+        <!-- Cover Text Content -->
+        <div class="text-2xl md:text-4xl lg:text-5xl font-extrabold">
+          <h3 class="text-xl font-semibold">---SALE FEVER---</h3>
+          <h1 class="leading-tight md:leading-snug lg:leading-normal">Purchase TK 200 or<br> above & get <span class="text-pink-600">20% off</span></h1>
+        </div>
+        <div class="flex items-center justify-center gap-1">
+          <p class="font-medium">Use Promo Code</p>
+          <button class="w-20 h-8 bg-pink-600 rounded text-white font-semibold">SELL200</button>
+        </div>
+      </div>
+      <div>
+        <!-- Cover Image -->
+        <img src="./images/Summer 1.png" alt="">
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- Section Container -->
+    <section class="flex gap-8 px-60 mt-20">
+      <!-- Cards Container -->
+      <div class="space-y-10">
+        <!-- Kitchenware Sections -->
+        <section>
+          <h1 class="font-bold text-4xl">Kitchenware</h1>
+        <div class="flex gap-8 w-full">
+          <!-- Card-1 -->
+        <div class="card w-80 bg-base-100 shadow-xl card-body items-center text-center">
+          <figure class="px-10 pt-10">          
+              <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />        
+          </figure>       
+            <h2 id="product-name">K. Accessories</h2>
+            <p>Price : <span id="product-price">500</span> TK</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>  
+              <button onclick="buyNow(this)" class="btn btn-primary">Buy Now</button> 
+        </div>
+        <!-- Card-2 -->
+        <div class="card w-80 bg-base-100 shadow-xl card-body items-center text-center">
+          <figure class="px-10 pt-10">          
+              <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />        
+          </figure>       
+            <h2 id="product-name">K. Accessories</h2>
+            <p>Price : <span id="product-price">600</span> TK</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>  
+              <button onclick="buyNow(this)" class="btn btn-primary">Buy Now</button> 
+        </div>
+        <!-- Card-3 -->
+        <div class="card w-80 bg-base-100 shadow-xl card-body items-center text-center">
+          <figure class="px-10 pt-10">          
+              <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />        
+          </figure>       
+            <h2 id="product-name">Home Cooker</h2>
+            <p>Price : 500 TK</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>  
+              <button onclick="buyNow(this)" class="btn btn-primary">Buy Now</button> 
+        </div>
+        <!-- Card -->
+        </div>
+        </section>
+        <!-- Another card section -->
+        <section>
+           <div class="flex gap-8 w-full">
+            <!-- Card-4 -->
+        <div class="card w-80 bg-base-100 shadow-xl card-body items-center text-center">
+          <figure class="px-10 pt-10">          
+              <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />        
+          </figure>       
+            <h2 id="product-name">Home Cooker</h2>
+            <p>Price : <span>800</span> TK</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>  
+              <button onclick="buyNow(this)" class="btn btn-primary">Buy Now</button> 
+        </div>
+        <!-- Card-5 -->
+        <div class="card w-80 bg-base-100 shadow-xl card-body items-center text-center">
+          <figure class="px-10 pt-10">          
+              <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />        
+          </figure>       
+            <h2 id="product-name">Home Cooker</h2>
+            <p>Price : <span>700</span> TK</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>  
+              <button onclick="buyNow(this)" class="btn btn-primary">Buy Now</button> 
+        </div>
+        <!-- Card-6 -->
+        <div class="card w-80 bg-base-100 shadow-xl card-body items-center text-center">
+          <figure class="px-10 pt-10">          
+              <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />        
+          </figure>       
+            <h2 id="product-name">Home Cooker</h2>
+            <p>Price : <span>900</span> TK</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>  
+              <button onclick="buyNow(this)" class="btn btn-primary">Buy Now</button> 
+        </div>
+           </div>
+        </section>
+      </div>
+      <!-- Side Card Container Section -->
+      <section class="space-y-4 mt-9">
+        <!-- Have Coupon Container Card -->
+        <div class="bg-gray-300 w-80 h-28 rounded p-5 space-y-1">
+          <h1 class="text-black font-bold text-xl">Have coupon?</h1>
+          <div>
+            <input id="coupon-code-field" class="p-2 rounded-l-md" type="text" placeholder="Coupon code">
+            <button onclick="apply()" class="bg-pink-600 p-2 rounded-r-md text-white font-semibold" >Apply</button>
+          </div>
+        </div>
+        <!-- Make purchase card -->
+        <div class="bg-gray-300 p-5 rounded space-y-2">
+          <div id="selected-item" class="selected-item-class">
+            
+          </div>
+          <hr>
+          <P class="font-semibold text-xl">Total price: <span id="total-price">00</span> TK </P>
+          <P class="font-semibold text-xl">Discount : <span id="discount-price">00</span> TK </P>
+          <P class="font-semibold text-xl">Total: <span id="final-price">00</span> TK </P>
+          <hr>
+          <button class="bg-pink-600 btn btn-primary border-none ml-11 w-48 text-white font-semibold text-lg">Make Purchase</button>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="JS/index.js"></script>
 </body>
 </html>
